@@ -1,0 +1,39 @@
+{% extends 'base-templates.html' %}
+{% block content %}
+
+<div class="col-sm-6">
+    <div class="login_form_inner register_form_inner">
+        <h5>Don't have an Account? Register Here!</h5>
+        <h4>OR</h4>
+        <h5>Already have an account! <a href="http://127.0.0.1:8000/signup"> Login Now!</a></h5>
+        
+            <form class="row login_form" action="login/" method="POST" id="register_form" >
+                {% csrf_token %}
+				<div class="col-md-12 form-group">
+				    <input type="text" class="form-control" id="name" name="name"  placeholder="Username" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Username'"></div>
+				<div class="col-md-12 form-group">
+                    <input type="email" class="form-control" id="email" name="email" required placeholder="Email Address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email Address'"></div>
+                <div class="col-md-12 form-group">
+					<input type="text" class="form-control" id="confirmPassword" name="contact" required placeholder="Contact" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Contact'"></div>
+			    <div class="col-md-12 form-group">
+                    <input type="text" class="form-control" id="confirmPassword" name="address" required placeholder="Address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Address'"></div>
+                <div class="col-md-12 form-group">
+                    <input type="number" class="form-control" id="confirmPassword" name="zipcode" required placeholder="Zip Code" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Zip Code'"></div>
+                <div class="col-md-12 form-group">
+                    <input type="password" class="form-control" id="confirmPassword" name="password" required placeholder="Password" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Password'"></div>        
+                <div class="creat_account">
+                    <input type="checkbox" id="f-option2" name="selector">
+                    <label for="f-option2">Keep me logged in</label>
+                    </div>
+                    </div>
+					<div class="col-md-12 form-group">
+						<button type="submit" value="submit" class="button button-register w-100">Register</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</form>
+{% endblock %}

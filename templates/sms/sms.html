@@ -1,0 +1,14 @@
+{% extends 'base-templates.html' %}
+{% block content %}
+
+<h4>Way2SMS function  </h4>
+<form " method="POST">
+    {% csrf_token %}
+    <input type="text" name="username" placeholder="username" size="45"><br>
+    <input type="password" name="password" placeholder="Password" size="45"><br>
+    <textarea rows="'20" cols="80" type="text" name="message" placeholder="Your Message"></textarea>
+    <input type="text" name="text" placeholder="text" size="45"><br>
+    <br><input type="submit" value="Send">
+
+</form>
+{% endblock %}

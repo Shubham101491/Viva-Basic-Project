@@ -1,0 +1,17 @@
+{% extends 'base-templates.html' %}
+{% block content %}
+
+<div class="col-sm-6">
+    <div class="login_form_inner register_form_inner">
+        <h5>Login Here</h5>
+            <form class="row login_form" action="enter/" method="POST" id="register_form" >
+                {% csrf_token %}
+				<div class="col-md-12 form-group">
+                    <input type="text" class="form-control" id="name" name="name" required placeholder="Username" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Username'"></div>
+                <div class="col-md-12 form-group">
+                    <input type="password" class="form-control" id="name" name="password" required placeholder="Password" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Username'"></div>
+                    <div class="col-md-12 form-group">
+						<button type="submit" value="submit" class="button button-register w-100">Login</button>
+							</div>
+                </form>
+{% endblock %}

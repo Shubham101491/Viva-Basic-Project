@@ -1,0 +1,5 @@
+This is text file where you know the error of the Project
+
+1. Update function not working in Blog.
+
+2. Register/ Sign Data does't save in the database. But manually has been added.

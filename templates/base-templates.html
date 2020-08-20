@@ -1,0 +1,131 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Viva Django</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+<!--CSS File created by us-->
+  <link rel="stylesheet" href="{% static 'css/carousel.css' %}">
+  <link rel="stylesheet" href="{% static 'css/register.css' %}">
+  <link rel="stylesheet" href="{% static 'css/signin.css' %}">
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+  
+<!--  JS File created by us-->
+  <script src="{% static 'js/signin.js' %}"></script>
+  <script src="{% static 'js/register.js' %}"></script>
+
+<!--  Shop JS Files in aroma -->
+
+  <script src="{% static 'vendors/jquery/jquery-3.2.1.min.js' %}"></script>
+  <script src="{% static 'vendors/bootstrap/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'vendors/skrollr.min.js' %}"></script>
+  <script src="{% static 'vendors/owl-carousel/owl.carousel.min.js' %}"></script>
+  <script src="{% static 'vendors/nice-select/jquery.nice-select.min.js' %}"></script>
+  <script src="{% static 'vendors/jquery.ajaxchimp.min.js' %}"></script>
+  <script src="{% static 'vendors/mail-script.js' %}"></script>
+  <script src="{% static 'js/main.js' %}"></script>
+
+<!-- End Files -->
+
+<!--  Shop CSS file in aroma-->
+  <link rel="icon" href="{% static 'img/Fevicon.png' %}" type="image/png">
+  <link rel="stylesheet" href="{% static 'vendors/bootstrap/bootstrap.min.css' %}">
+  <link rel="stylesheet" href="{% static 'vendors/fontawesome/css/all.min.css' %}">
+  <link rel="stylesheet" href="{% static 'vendors/themify-icons/themify-icons.css' %}">
+  <link rel="stylesheet" href="{% static 'vendors/nice-select/nice-select.css' %}">
+  <link rel="stylesheet" href="{% static 'vendors/owl-carousel/owl.theme.default.min.css' %}">
+  <link rel="stylesheet" href="{% static 'vendors/owl-carousel/owl.carousel.min.css' %}">
+  <link rel="stylesheet" href="{% static 'css/aroma.css' %}">
+
+  <!-- End Files -->
+</head>
+<body>
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <!-- Brand/logo -->
+  <a class="navbar-brand">
+    <img src="{% static 'img/my/logo1.png' %}" alt="logo" style="width:40px;">
+  </a>
+
+  <!-- Links -->
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link" href="{{BASE_URL}}">Home</a>
+    </li>
+
+    <li class="nav-item">
+      <a class="nav-link" href="{{BASE_URL}}blog">Blog</a>
+    </li>
+
+    <a class="nav-link" href="{{BASE_URL}}signup">Sign Up</a>
+    </li>
+
+    <!-- <a class="nav-link" href="{{BASE_URL}}login">Login</a>
+    </li> -->
+
+    <li class="nav-item">
+      <a class="nav-link" href="{{BASE_URL}}contact">Contact</a>
+    </li>
+
+    <li class="nav-item">
+      <a class="nav-link" href="{{BASE_URL}}payment">Payment</a>
+    </li>
+
+    <li class="nav-item">
+      <a class="nav-link" href="{{BASE_URL}}shop">Shop</a>
+    </li>
+
+    <li class="nav-item">
+      <a class="nav-link" href="{{BASE_URL}}mail">Email</a>
+    </li>
+
+<!--    Set Dropdown -->
+     <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Email
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Single Mail</a>
+          <a class="dropdown-item" href="#">Mass Mail</a>
+          <a class="dropdown-item" href="#">Admin Mail</a>
+          <a class="dropdown-item" href="#">Manager Mail</a>
+          <div class="dropdown-divider"></div>
+        </div>
+      </li>
+
+<!--    End Dropdown-->
+    <li class="nav-item">
+      <a class="nav-link" href="{{BASE_URL}}sms">SMS</a>
+    </li>
+
+    <li class="nav-item">
+      <a class="nav-link" href="{{BASE_URL}}api">API</a>
+    </li>
+
+  </ul>
+</nav>
+
+<div class="container-fluid">
+  </div>
+
+{% block content %}
+
+{% endblock %}
+
+<div class="jumbotron text-center" style="margin-bottom:0">
+  <p>Email Us - shubhamupadhyay1014@gmail.com</p>
+</div>
+
+</body>
+</html>
